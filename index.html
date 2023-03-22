@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Expenses chart component</title>
+
+
+</head>
+<body>
+
+  <header>
+    <div class="balance">
+      <p>My balance</p>
+      <h1>$921.48</h1>
+    </div>
+    <img src="logo.svg" alt="logo" width="72" height="48">
+  </header>
+
+  <main>
+    <h2>Spending - Last 7 days</h2>
+    <div class="chart-container">
+      <div class="day mon">
+        <div class="amount"></div>
+        <div class="bar"></div>
+        <p>mon</p>
+      </div>
+      <div class="day tue">
+        <div class="amount"></div>
+        <div class="bar"></div>
+        <p>tue</p>
+      </div>
+      <div class="day wed">
+        <div class="amount"></div>
+        <div class="bar"></div>
+        <p>wed</p>
+      </div>
+      <div class="day thu">
+        <div class="amount"></div>
+        <div class="bar"></div>
+        <p>thu</p>
+      </div>
+      <div class="day fri">
+        <div class="amount"></div>
+        <div class="bar"></div>
+        <p>fri</p>
+      </div>
+      <div class="day sat">
+        <div class="amount"></div>
+        <div class="bar"></div>
+        <p>sat</p>
+      </div>
+      <div class="day sun">
+        <div class="amount"></div>
+        <div class="bar"></div>
+        <p>sun</p>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <div class="left">
+        <p>Total this month</p>
+        <h3>$478.33</h3>
+      </div>
+      <div class="right">
+        <h4>+2.4%</h4>
+        <p>from last month</p>
+      </div>
+    </footer>
+  </main>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

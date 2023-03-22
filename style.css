@@ -1,0 +1,198 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8E9DD;
+}
+
+header{
+    width:54rem;
+    height: 10rem;
+    background-color: #EC755D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 0 2rem;
+}
+
+.balance > p{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 0.7rem;
+}
+.balance > h1{
+    font-size: 3.2rem;
+    color: #fff;
+}
+
+main{
+    width:54rem;
+    background-color: #FFFFFF;
+    height: auto;
+    padding: 3rem 0 3rem 2rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+
+main > h2{
+    font-size: 3.2rem;
+    color:#382314;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.chart-container{
+    width:100%;
+    height: auto;
+    display: flex;
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem 1rem;
+    height: auto;
+}
+
+.day > p{
+    font-size: 1.5rem;
+    color:#92857A;
+    font-weight: 300;
+}
+
+.bar{
+    width:5rem;
+    background-color: #EC755D;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.amount{
+    width:130%;
+    height: 4rem;
+    background-color: #382314;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    display: none;
+    color: #fff;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+}
+
+hr{
+    width: 95%;
+    background-color: #F8E9DD;
+    opacity: 0.3;
+}
+
+footer{
+    width:95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.left >p, .right>p{
+    font-size: 1.8rem;
+    color: #92857A;
+
+}
+
+.left > h3{
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-top: 0.7rem;
+}
+
+.right > h4{
+    font-size: 1.8rem;
+    color:#382314;
+    margin-bottom: 0.7rem;
+}
+
+@media screen and (max-width:760px){
+
+body{
+    justify-content: flex-start;
+}
+    header{
+        width: 90%;
+        height: 9rem;
+        margin-top: 2rem;
+    }
+    
+    .balance > p{
+        font-size: 1.5rem;
+        margin-bottom: 0.7rem;
+    }
+    .balance > h1{
+        font-size: 2.4rem;
+    }
+    main{
+        width:90%;
+    }
+    
+    main > h2{
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+    
+    
+    .day{
+        width:3.3rem;
+        margin: 1rem 0.5rem;
+    }
+    
+    .day > p{
+        font-size: 1.2rem;
+    }
+    
+    .bar{
+        width:100%;
+    }
+    .amount{
+        width:120%;
+        height: 4rem;
+        font-size: 1.3rem;
+    }
+    
+
+    
+    .left >p, .right>p{
+        font-size: 1.5rem;
+    }
+    
+    .left > h3{
+        font-size: 3rem;
+    }
+    
+    .right > h4{
+        font-size: 1.5rem;
+    }
+    
+}
+
+/* JS CSS */
+
+.show{
+    display: block;
+}
