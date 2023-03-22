@@ -12,13 +12,17 @@
         bar[i].style.height = `${percent * 140}px`; 
         bar[i].value = data[i].amount;
         bar[i].addEventListener('mouseover', ()=>{
-            bar[i].previousElementSibling.classList.toggle('show');
+            bar[i].previousElementSibling.classList.add('show');
             bar[i].previousElementSibling.textContent = '$ ' + bar[i].value;
-        })
+        });
+       bar[i].addEventListener('mouseout', () => {
+            bar[i].previousElementSibling.classList.remove('show');
+          });
         bar[i].addEventListener('click', ()=>{
             bar[i].previousElementSibling.classList.toggle('show');
             bar[i].previousElementSibling.textContent = '$ ' + bar[i].value;
-        })
+        });
+     
         
     }
     const daysOfTheWeek = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
